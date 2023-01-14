@@ -1,0 +1,191 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav Menu */
+
+.nav-container{
+
+    width: 100%;
+    background: rgba(255, 144, 14, 0.1);
+  
+}
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.nav-heading{
+
+    color: rgb(9, 9, 9);
+    font-size: 28px;
+}
+
+.header-span{
+
+    color: #EA1538;
+}
+
+nav ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding: 3px 6px;
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(9, 9, 9);
+}
+
+nav ul li a:hover{
+
+    color: #EA1538;
+    transition: 0.3s;
+
+}
+
+
+/* First Section */
+
+.first-section-container{
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 144, 14, 0.1);
+
+}
+
+/* First Section Heading */
+
+.section-heading{
+
+    width: 60%;
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    
+}
+
+/* First Section Paragraph */
+
+.section-paragraph{
+
+width: 70%;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: #727272;
+margin-top: 15px;
+
+}
+
+/* Explore More Button */
+
+.explore-more{
+
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.banner-image{
+
+    margin-bottom: 30px;
+}
+
+
+
+/* Second Section */
+
+.second-section-container{
+
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: left;
+  margin-top: 40px;
+  grid-gap: 20px;
+
+}
+
+section .team-photo{
+
+    padding-left: 170px;
+    
+}
+
+.text{
+
+    margin-top: 220px;
+    margin-right: 90px;
+    width: 70%;
+}
+
+
+.span1{
+
+    color: #727272;
+    font-size: 45px;
+
+}
+
+.span2{
+
+    color: #131313;
+    font-size: 45px;
+
+}
+
+.span3{
+
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.text p{
+
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+/* Third Section */
+
+.third-section-container{
+
+    display: flex;
+    margin-top: 70px;
+}
+
+.third-section-text{
+
+    font-size: 25px;
+    padding: 40px;
+    line-height: 35px;
+
+
+}
