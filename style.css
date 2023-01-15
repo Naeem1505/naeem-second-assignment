@@ -28,6 +28,7 @@ nav{
 
     color: rgb(9, 9, 9);
     font-size: 28px;
+    cursor: pointer;
 }
 
 .header-span{
@@ -109,6 +110,7 @@ margin-top: 15px;
     margin-top: 15px;
     margin-bottom: 30px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .banner-image{
@@ -175,17 +177,290 @@ section .team-photo{
 
 /* Third Section */
 
-.third-section-container{
+.third-container{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-left: 30px;
+   
+}
+
+.third-section-first-header{
+
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+    padding: 30px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+
+.third-section-first-header h4{
+
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    border-left: 8px solid #FF900E;
+    padding-left: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.third-section-first-header h4 p{
+
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 30px;
+ 
+}
+
+.third-section-other-header{
+
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+    padding-left: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.third-section-other-header h6{
+
+color: #131313;
+font-weight: 600;
+font-size: 20px;
+
+}
+
+.third-section-other-header h6 p{
+
+
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* 10 Year Button */
+
+button{
+
+    background-color: #FF900E;
+    border: 0;
+    padding: 25px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+button .span1{
+
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+button .span2{
+
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+/* Forth Section */
+
+.forth-container > h2{
+
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 70px;
+}
+
+.photo-arrange:hover{
+
+    background-image: linear-gradient(40deg, #b85dff 40%, rgb(255,69,69) 100%);
+    transition: 0.5s;
+}
+
+.forth-container > p{
+
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 70px;
+
+}
+
+.award{
+
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    
+}
+
+.photo-arrange{
+
+    
+    border: 1px solid #FF900E;
+    width: 200px;
+    height: 180px;
+    margin: 30px 35px ;
+    text-align: center;
+    padding: 40px 20px;
+    cursor: pointer;
+    
+}
+
+.photo-arrange > h3{
+
+    color: #424242;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+ 
+}
+
+.photo-arrange > p{
+
+    color: #727272;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Fifth Section */
+
+.sponspors-heading{
+
+    text-align: center;
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.sponspors-paragraph{
+
+    text-align: center;
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+
+.sponsar-photo{
 
     display: flex;
-    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
-.third-section-text{
+/* Newspaper Section */
 
-    font-size: 25px;
-    padding: 40px;
-    line-height: 35px;
+.newspaper-heading{
 
-
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
 }
+
+.newspaper{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+footer p{
+
+    text-align: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    padding: 25px 30px;
+    display:block;
+    margin: 0 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;   
+}
+
+/* Responsive For Mobile Device */
+
+@media only screen and (max-width: 768px) {
+
+    .newspaper{
+
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+    }
+
+    .award{
+
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .third-container{
+
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        width: 40%;
+    
+
+    }
+
+    .header-paragraph{
+
+        
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        width: 33.3%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .third-section-img{
+
+        grid-template-columns: repeat(1, 1fr);
+
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+        align-items: center;
+        width: 15%;
+        margin: 0;
+
+
+    }
+
+    nav{
+
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .second-section-container{
+
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    
+   
+
+  }
